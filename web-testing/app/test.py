@@ -66,5 +66,10 @@ try:
 except:
   print("La página es huérfana")
 
-driver.get("http://tianguis.migala.mx")
+try:
+  driver.get("http://tianguis.migala.mx/")
+  print("Se pudo entrar a la página huérfana")
+except:
+  print("No se encuentra la página")
 driver.quit()
+
